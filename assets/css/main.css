@@ -238,11 +238,36 @@ input, select, textarea {
 	}
 
 /* Headshot */
-.headshot {
+.image.headshot {
   vertical-align: middle;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+/* People grid */
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.team-column .people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    row-gap: 30px;
+    column-gap: 30px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .team-column .people-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
 
 /* Row */
