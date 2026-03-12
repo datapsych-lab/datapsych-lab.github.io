@@ -270,6 +270,93 @@ input, select, textarea {
     }
 }
 
+.person-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.person-card {
+    border: 1px solid #eee;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(238, 238, 238);
+    border-right-color: rgb(238, 238, 238);
+    border-bottom-color: rgb(238, 238, 238);
+    border-left-color: rgb(238, 238, 238);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.pi-column .person-card {
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.hierarchical-layout-container {
+    display: flex;
+    gap: 40px;
+    row-gap: 40px;
+    column-gap: 40px;
+    /* margin-top: 30px; */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media (max-width: 900px) {
+    .hierarchical-layout-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .pi-column {
+        flex-basis: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(238, 238, 238);
+    }
+}
+
+.pi-column {
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
+
 /* Row */
 
 	.row {
